@@ -1,0 +1,41 @@
+.top-menu {
+  font-size: 13px;
+  line-height: 44px;
+  z-index: 1;
+  box-sizing: border-box;
+  height: 44px;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  margin-bottom: 28px;
+  background: #ffffff;
+
+  .top-navigation {
+    width: 100%;
+    display: block;
+    list-style: none;
+
+    .menu-item {
+      display: inline-block;
+      padding: 0 10px;
+      margin: 0 15px;
+      line-height: 41px;
+
+      a {
+        color: rgba(0,0,0,.5);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &.active,
+      &:hover,
+      &:active {
+        border-bottom: 2px solid #db7427;
+
+        a {
+          color: #000000;
+        }
+      }
+    }
+  }
+}

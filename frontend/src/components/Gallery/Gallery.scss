@@ -1,0 +1,175 @@
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
+
+.gallery {
+  min-height: 400px;
+
+  &.content-block {
+    padding: 0;
+  }
+
+  .title {
+    padding-bottom: 30px;
+    background: #ececec;
+
+    h1,
+    .prime-price {
+      font-size: 31px;
+      font-weight: 700;
+      line-height: 40px;
+      overflow: hidden;
+      flex: 1;
+      min-width: 0;
+      margin: 0 auto 0 0;
+      padding-right: 24px;
+    }
+
+    .short-info {
+      color: rgba(0,0,0,.5);
+      font-size: 15px;
+    }
+  }
+
+  .image-gallery {
+    padding-top: 15px;
+
+    .image-gallery-thumbnail.active,
+    .image-gallery-thumbnail:hover,
+    .image-gallery-thumbnail:focus {
+      outline: none;
+      border: 1px solid #999999;
+    }
+
+    .image-gallery-thumbnail {
+      border: 1px solid transparent;
+    }
+  }
+}
+
+.app {
+  padding-top: 50px;
+}
+
+.app-header {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.app .image-gallery,
+.app-sandbox {
+  width: 65%;
+  transition: all 1s ease;
+}
+
+.app-sandbox {
+  margin: 40px auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.app-buttons li {
+  display: block;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.image-gallery-swipe {
+  cursor: pointer;
+}
+
+.app-interval-input-group {
+  display: table;
+}
+
+.app-interval-label {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555555;
+  text-align: center;
+  background-color: #eeeeee;
+  border: 3px solid #cccccc;
+  border-right: none;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.app-interval-input {
+  -webkit-appearance: none;
+  display: table-cell;
+  margin: 0;
+  padding: 9px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 3px solid #cccccc;
+  background: #ffffff;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input.app-interval-input {
+  width: 65px;
+}
+
+.app-checkboxes {
+  margin-top: 10px;
+}
+
+.app-checkboxes li {
+  display: block;
+}
+
+@media (max-width: 1320px) {
+  .app-sandbox-content {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    font-size: 20px;
+  }
+
+  .app-buttons li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .app-buttons li + li {
+    padding: 0;
+  }
+
+  .play-button {
+    height: 40px;
+    width: 65px;
+  }
+
+  .play-button:after {
+    top: 11px;
+    left: 27px;
+    border-width: 8.5px 0 8.5px 12px;
+  }
+
+  .close-video::before {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app .image-gallery,
+  .app-sandbox {
+    width: 100%;
+  }
+}
